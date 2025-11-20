@@ -30,7 +30,14 @@ const InvestorInfo = () => {
   return (
     <div className="investor-info">
       {/* Hero Banner */}
-      <section className="investor-hero">
+     
+ <section
+          className="investor-hero bg-cover h-[55vh] bg-center bg-no-repeat w-full"
+          style={{ backgroundImage: "url('/img/Banners/Investor-info.webp')" }}>
+
+          {/* DARK OVERLAY FOR OPACITY */}
+            <div className="absolute inset-0 bg-black/60"></div>
+
         <div className="hero-background-pattern"></div>
         <div className="hero-content-wrapper">
           <div className="hero-label">Investor Information</div>

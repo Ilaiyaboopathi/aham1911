@@ -161,7 +161,14 @@ const AhamMoments = () => {
   return (
     <div className="aham-moments">
       {/* Hero Banner */}
-      <section className="moments-hero">
+    
+
+         <section
+          className="moments-hero bg-cover h-[60vh] bg-center bg-no-repeat w-full"
+          style={{ backgroundImage: "url('/img/Banners/Gallery.webp')" }}>
+
+          {/* DARK OVERLAY FOR OPACITY */}
+            <div className="absolute inset-0 bg-black/60"></div>
         <div className="hero-content">
           <h1 className="hero-title">Aham Moments</h1>
           <p className="hero-tagline">

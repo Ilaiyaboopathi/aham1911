@@ -34,7 +34,14 @@ const GrievanceRedressal = () => {
   return (
     <div className="grievance-page">
       {/* Hero Banner */}
-      <section className="grievance-hero">
+    
+         <section
+          className="grievance-hero bg-cover h-[60vh] bg-center bg-no-repeat w-full"
+          style={{ backgroundImage: "url('/img/Banners/Grievance-Redressal.webp')" }}>
+
+          {/* DARK OVERLAY FOR OPACITY */}
+            <div className="absolute inset-0 bg-black/60"></div>
+
         <div className="hero-decoration-left"></div>
         <div className="hero-decoration-right"></div>
         <div className="hero-content-main">

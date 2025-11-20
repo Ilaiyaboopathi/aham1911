@@ -30,6 +30,12 @@
   overflow: hidden;
 }
 
+.auction-hero {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
 .auction-hero-bg {
   position: absolute;
   top: 0;

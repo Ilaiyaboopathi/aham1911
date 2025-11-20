@@ -138,7 +138,13 @@ const EAuction = () => {
   return (
     <div className="e-auction">
       {/* Hero Banner */}
-      <section className="auction-hero">
+    <section
+  className="auction-hero relative bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/img/Banners/E-Auction.webp')" }}   // ← your bg image
+>
+  {/* DARK OVERLAY (adjust opacity here) */}
+  <div className="absolute inset-0 bg-black/50"></div>
+  
         <div className="auction-hero-bg"></div>
         <div className="auction-hero-content">
           <div className="auction-badge">
@@ -151,14 +157,7 @@ const EAuction = () => {
             Browse auction listings, review property details, and participate securely through our e-auction platform.
           </p>
           <div className="auction-hero-actions">
-            {/* <Button className="auction-btn-primary">
-              View Active Auctions
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" className="auction-btn-secondary">
-              <Download className="w-5 h-5" />
-              Download Guidelines
-            </Button> */}
+          
           </div>
         </div>
       </section>

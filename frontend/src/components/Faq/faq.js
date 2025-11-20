@@ -41,7 +41,7 @@ export default function Faq() {
       <header className="relative h-[50vh] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/img/faq/faq.jpg')" }}
+          style={{ backgroundImage: "url('/img/faq/faq.webp')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#02122f]/80 via-[#09306a]/55 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">

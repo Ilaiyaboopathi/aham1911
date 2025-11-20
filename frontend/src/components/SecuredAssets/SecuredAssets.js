@@ -156,7 +156,15 @@ const SecuredAssets = () => {
   return (
     <div className="secured-assets">
       {/* Hero Banner */}
-      <section className="assets-hero">
+    
+
+          <section
+  className="assets-hero relative bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/img/Banners/Secured-Assets.webp')" }}   // ← your bg image
+>
+  {/* DARK OVERLAY (adjust opacity here) */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
         <div className="assets-hero-bg"></div>
         <div className="assets-hero-content">
           <div className="shield-badge">

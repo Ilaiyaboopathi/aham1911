@@ -50,7 +50,7 @@ const LifeAtAham = () => {
       <section className="hero-section">
         <div className="hero-background">
           <img 
-           src="/img/ahamlife/Team-banner.webp"
+           src="/img/Banners/Life-Aham.webp"
             alt="Team collaboration"
             className="hero-image"
             style={{ transform: `translateY(${scrollY * 0.5}px)` }}

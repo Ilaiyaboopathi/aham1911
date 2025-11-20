@@ -1,14 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Home, Users, Star, Building } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 const AboutUs = () => {
+ const youtubeLink = "https://www.youtube.com/@ahamhfc";
+
+  const videos = [
+    { id: 1, thumb: "https://img.youtube.com/vi/tgbNymZ7vqY/maxresdefault.jpg" },
+    { id: 2, thumb: "https://img.youtube.com/vi/ysz5S6PUM-U/maxresdefault.jpg" },
+    { id: 3, thumb: "https://img.youtube.com/vi/jfKfPfyJRdk/maxresdefault.jpg" },
+  ];
+
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
       {/* ===== Hero Banner Section ===== */}
-      <section className="relative h-[70vh] flex items-center justify-center bg-gradient-to-r from-blue-900 via-blue-800 to-blue-600 text-white">
+      <section className="relative h-[50vh] flex items-center justify-center bg-gradient-to-r from-blue-900 via-blue-800 to-blue-600 text-white">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+          src="img/Banners/About-us.webp"
           alt="About Banner"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
@@ -79,7 +88,7 @@ const AboutUs = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80"
+                src="img/ahamMoments/Dummy/Business-analytics.webp"
                 alt="Aham Housing"
                 className="w-full h-64 object-cover"
               />
@@ -252,22 +261,50 @@ const AboutUs = () => {
 
 
       {/* ===== YouTube Section ===== */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-20 px-6 md:px-12 lg:px-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-10">
-            Watch Our Story
-          </h2>
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <iframe
-              className="w-full h-[400px] md:h-[500px]"
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-              title="Aham Housing Finance"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+       <section className="bg-gradient-to-b from-blue-50 to-white py-20 px-6 md:px-12 lg:px-20">
+      <div className="max-w-6xl mx-auto text-center">
+
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-10">
+          Watch Our Journey
+        </h2>
+
+        {/* AUTO SCROLL WRAPPER */}
+        <div className="overflow-hidden py-4">
+          <motion.div
+            className="flex gap-6"
+            animate={{ x: ["0%", "-100%"] }}
+            transition={{
+              repeat: Infinity,
+              duration: 20,
+              ease: "linear"
+            }}
+          >
+            {/* Duplicate items to create infinite loop */}
+            {[...videos, ...videos].map((video, index) => (
+              <div
+                key={index}
+                onClick={() => window.open(youtubeLink, "_blank")}
+                className="min-w-[350px] md:min-w-[420px] cursor-pointer group"
+              >
+                <div className="relative rounded-xl overflow-hidden shadow-xl ">
+                  <img
+                    src={video.thumb}
+                    alt="Aham Video"
+                    className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all"></div>
+
+                  <div className="absolute bottom-4 right-4 bg-white text-blue-900 px-4 py-2 rounded-full flex items-center gap-2 shadow-lg text-sm font-semibold">
+                    Watch on YouTube <ChevronRight size={16} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
-      </section>
+
+      </div>
+    </section>
     </div>
   );
 };

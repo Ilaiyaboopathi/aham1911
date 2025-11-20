@@ -100,13 +100,21 @@ const CorporateGovernance = () => {
   return (
     <div className="corporate-governance">
       {/* Hero Banner */}
-      <section className="governance-hero">
+     
+
+ <section
+          className="governance-hero bg-cover h-[70vh] bg-center bg-no-repeat w-full"
+          style={{ backgroundImage: "url('/img/Banners/Corporate-Governance.webp')" }}>
+
+          {/* DARK OVERLAY FOR OPACITY */}
+            <div className="absolute inset-0 bg-black/60"></div>
+
         <div className="governance-hero-bg"></div>
         <div className="governance-hero-content">
-          <div className="governance-seal">
+          {/* <div className="governance-seal">
             <Shield className="seal-shield" />
             <div className="seal-text">GOVERNANCE</div>
-          </div>
+          </div> */}
           <h1 className="governance-hero-title">Corporate Governance</h1>
           <p className="governance-hero-subtitle">Integrity. Transparency. Accountability.</p>
           {/* <p className="governance-hero-text">

@@ -31,6 +31,12 @@
   overflow: hidden;
 }
 
+.assets-hero {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
 .assets-hero-bg {
   position: absolute;
   top: 0;

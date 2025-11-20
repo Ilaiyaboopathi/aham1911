@@ -138,7 +138,13 @@ const DSAOnboarding = () => {
   return (
     <div className="dsa-onboarding">
       {/* Hero Banner */}
-      <section className="dsa-hero">
+      <section
+          className="dsa-hero bg-cover h-[60vh] bg-center bg-no-repeat w-full"
+          style={{ backgroundImage: "url('/img/Banners/OnBoarding.webp')" }}>
+
+          {/* DARK OVERLAY FOR OPACITY */}
+            <div className="absolute inset-0 bg-black/60"></div>
+
         <div className="hero-bg-pattern"></div>
         <div className="hero-content-container">
           <div className="hero-badge">
@@ -152,15 +158,7 @@ const DSAOnboarding = () => {
           <p className="dsa-hero-tagline">
             Join a trusted network of Direct Selling Agents committed to customer-first service and ethical lending practices.
           </p>
-          {/* <div className="hero-actions">
-            <Button className="hero-btn-main">
-              Apply Now
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" className="hero-btn-outline">
-              Download Brochure
-            </Button>
-          </div> */}
+         
         </div>
       </section>
 

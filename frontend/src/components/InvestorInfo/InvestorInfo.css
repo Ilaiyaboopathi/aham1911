@@ -28,6 +28,12 @@
   overflow: hidden;
 }
 
+.investor-hero {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
 .hero-background-pattern {
   position: absolute;
   top: 0;

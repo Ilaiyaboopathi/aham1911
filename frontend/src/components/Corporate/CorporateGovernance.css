@@ -31,6 +31,12 @@
   overflow: hidden;
 }
 
+.governance-hero {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
 .governance-hero-bg {
   position: absolute;
   top: 0;

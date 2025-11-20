@@ -22,7 +22,7 @@ const BlogSection = () => {
       id: 1,
       title: 'PMAY 2.0 Guidelines: Complete Guide to Government Housing Subsidy',
       excerpt: 'Learn about the updated PMAY 2.0 scheme, eligibility criteria, and how to apply for government housing subsidies up to ₹2.67 lakhs.',
-      image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxob3VzaW5nJTIwZmluYW5jZSUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjAwMTMyMDF8MA&ixlib=rb-4.1.0&q=85',
+      image: 'img/Blogs/Loan1.webp',
       date: '2025-10-05',
       readTime: '5 min read',
       category: 'Government Schemes'
@@ -31,7 +31,7 @@ const BlogSection = () => {
       id: 2,
       title: 'Home Loan Interest Rates in 2025: What to Expect',
       excerpt: 'Analysis of current home loan interest rate trends and predictions for 2025. Find out how to get the best rates for your home loan.',
-      image: 'https://images.unsplash.com/photo-1626178793926-22b28830aa30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwzfHxob3VzaW5nJTIwZmluYW5jZSUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjAwMTMyMDF8MA&ixlib=rb-4.1.0&q=85',
+      image: 'img/Blogs/Loan2.webp',
       date: '2025-10-03',
       readTime: '7 min read',
       category: 'Market Trends'
@@ -40,7 +40,7 @@ const BlogSection = () => {
       id: 3,
       title: 'Home Loan Without Income Proof: A Complete Guide',
       excerpt: 'Discover how to get a home loan without traditional income documents. Learn about alternative documentation and eligibility criteria.',
-      image: 'https://images.unsplash.com/photo-1628133287836-40bd5453bed1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxob21lJTIwb3duZXJzaGlwfGVufDB8fHx8MTc2MDAxMzIwN3ww&ixlib=rb-4.1.0&q=85',
+      image: 'img/Blogs/Loan3.webp',
       date: '2025-10-01',
       readTime: '6 min read',
       category: 'Loan Tips'
@@ -172,7 +172,7 @@ const BlogSection = () => {
                   <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
                     style={{ 
-                      backgroundImage: 'url(https://images.pexels.com/photos/7937708/pexels-photo-7937708.jpeg)'
+                      backgroundImage: 'url(img/Blogs/Loan2.webp)'
                     }}
                   />
                   

@@ -32,6 +32,12 @@ min-height: 50vh;
   overflow: hidden;
 }
 
+.dsa-hero {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
 .hero-bg-pattern {
   position: absolute;
   top: 0;

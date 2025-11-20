@@ -25,7 +25,7 @@ const ProductsSection = () => {
       title: t('products.items.homeConstruction.title'),
       description: t('products.items.homeConstruction.description'),
       icon: HomeIcon,
-      image: 'https://images.unsplash.com/photo-1628133287836-40bd5453bed1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxob21lJTIwb3duZXJzaGlwfGVufDB8fHx8MTc2MDAxMzIwN3ww&ixlib=rb-4.1.0&q=85',
+      image: 'img/Products/Construction-Loan.webp',
       features: ['Stage-wise disbursement', 'Competitive rates', 'Flexible repayment'],
       gradient: 'from-blue-500 to-indigo-600',
       href: "https://aham.mbwhost.in/home-construction-loan" // ✅ Added link
@@ -35,7 +35,7 @@ const ProductsSection = () => {
       title: t('products.items.plotConstruction.title'),
       description: t('products.items.plotConstruction.description'),
       icon: BuildingOffice2Icon,
-      image: 'https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg',
+      image: 'img/Products/Resale-Loan.webp',
       features: ['Single loan solution', 'Land + Construction', 'End-to-end support'],
       gradient: 'from-green-500 to-emerald-600'
     },
@@ -44,7 +44,7 @@ const ProductsSection = () => {
       title: t('products.items.nriLoan.title'),
       description: t('products.items.nriLoan.description'),
       icon: GlobeAsiaAustraliaIcon,
-      image: 'https://images.unsplash.com/photo-1730130596425-197566414dc4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBmYW1pbHklMjBob21lfGVufDB8fHx8MTc2MDAxMzE5Nnww&ixlib=rb-4.1.0&q=85',
+      image: 'img/Products/NRI.webp',
       features: ['NRI special rates', 'Remote processing', 'Overseas income'],
       gradient: 'from-purple-500 to-violet-600'
     },
@@ -53,7 +53,7 @@ const ProductsSection = () => {
       title: t('products.items.renovation.title'),
       description: t('products.items.renovation.description'),
       icon: WrenchScrewdriverIcon,
-      image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxob3VzaW5nJTIwZmluYW5jZSUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjAwMTMyMDF8MA&ixlib=rb-4.1.0&q=85',
+      image: 'img/Products/Renovation-Loan.webp',
       features: ['Home improvements', 'Quick approval', 'Modern upgrades'],
       gradient: 'from-orange-500 to-red-600'
     },
@@ -62,7 +62,7 @@ const ProductsSection = () => {
       title: t('products.items.extension.title'),
       description: t('products.items.extension.description'),
       icon: PlusIcon,
-      image: 'https://images.unsplash.com/photo-1626178793926-22b28830aa30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwzfHxob3VzaW5nJTIwZmluYW5jZSUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjAwMTMyMDF8MA&ixlib=rb-4.1.0&q=85',
+      image: 'img/Products/Extension-Loan.webp',
       features: ['Space expansion', 'Additional floors', 'Value enhancement'],
       gradient: 'from-teal-500 to-cyan-600'
     },
@@ -71,7 +71,7 @@ const ProductsSection = () => {
       title: t('products.items.mortgage.title'),
       description: t('products.items.mortgage.description'),
       icon: BanknotesIcon,
-      image: 'https://images.pexels.com/photos/7937708/pexels-photo-7937708.jpeg',
+      image: 'img/Products/Mortage-loan.webp',
       features: ['Loan against property', 'Business funding', 'Personal needs'],
       gradient: 'from-pink-500 to-rose-600'
     }

@@ -14,7 +14,7 @@ const PMAY2Page = () => {
         style={{
           backgroundImage: `
             linear-gradient(rgba(59, 131, 246, 0.2), rgba(79, 70, 229, 0.9)),
-            url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1973&q=80')
+            url('img/pmay/Pmay.webp')
           `,
         }}
       >

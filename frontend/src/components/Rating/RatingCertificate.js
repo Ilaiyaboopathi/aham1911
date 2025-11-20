@@ -128,7 +128,15 @@ const RatingCertificate = () => {
   return (
     <div className="rating-certificate">
       {/* Hero Banner */}
-      <section className="rating-hero">
+     
+
+          <section
+  className="rating-hero relative bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/img/Banners/Rating-Certificate.webp')" }}   // ← your bg image
+>
+  {/* DARK OVERLAY (adjust opacity here) */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
         <div className="rating-hero-bg"></div>
         <div className="rating-hero-content">
           <div className="certificate-badge-hero">

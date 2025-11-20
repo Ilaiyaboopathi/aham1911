@@ -29,6 +29,12 @@
   overflow: hidden;
 }
 
+.grievance-hero {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
 .hero-decoration-left,
 .hero-decoration-right {
   position: absolute;
