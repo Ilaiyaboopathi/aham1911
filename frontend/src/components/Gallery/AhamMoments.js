@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { Button } from '../ui/button';
 import { X } from 'lucide-react';
 import './AhamMoments.css';
+import { useNavigate } from "react-router-dom";
 
 const AhamMoments = () => {
+  const navigate = useNavigate();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -198,8 +200,13 @@ const AhamMoments = () => {
           <h2 className="cta-heading">Want to be part of these moments?</h2>
           <p className="cta-text">Join our team and create your own story at Aham.</p>
           <div className="cta-buttons">
-            <Button className="cta-primary">View Open Positions</Button>
-            <Button variant="outline" className="cta-secondary">Learn More</Button>
+            {/* <Button className="cta-primary">View Open Positions</Button> */}
+            <Button 
+            variant="outline" 
+            className="cta-secondary"
+            onClick={() => navigate('/careers')}>
+             Contact 
+              </Button>
           </div>
         </div>
       </section>

@@ -93,7 +93,7 @@
 }
 
 .hero-cta {
-  background: var(--aham-gold);
+  background: #ffff;
   color: var(--aham-navy);
   padding: 16px 48px;
   font-size: 1.125rem;
@@ -102,14 +102,14 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(234, 179, 8, 0.3);
+ 
   font-family: 'Inter', system-ui, sans-serif;
 }
 
 .hero-cta:hover {
-  background: var(--aham-gold-hover);
+  background: #ffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(234, 179, 8, 0.4);
+
 }
 
 /* Section Container */
@@ -594,7 +594,7 @@
 }
 
 .cta-primary {
-  background: var(--aham-gold);
+  background: #dc2626;
   color: var(--aham-navy);
   padding: 16px 48px;
   font-size: 1.125rem;
@@ -614,13 +614,13 @@
 }
 
 .cta-secondary {
-  background: transparent;
-  color: white;
+  background: #ed2636;
+  color: rgb(10, 10, 10);
   padding: 16px 48px;
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 8px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Inter', system-ui, sans-serif;

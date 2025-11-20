@@ -3,8 +3,10 @@ import { Button } from '../ui/button';
 import { Card } from '../ui/card';
 import { Award, Download, Shield, TrendingUp, FileCheck, Users, CheckCircle2, Eye, Target, BarChart3, Star, Calendar, ExternalLink, ArrowRight } from 'lucide-react';
 import './RatingCertificate.css';
+import { useNavigate } from "react-router-dom";
 
 const RatingCertificate = () => {
+  const navigate = useNavigate();
   const whyItMattersPoints = [
     {
       icon: <Shield className="w-6 h-6" />,
@@ -358,12 +360,13 @@ const RatingCertificate = () => {
             Download the complete certificate and review our financial strength indicators.
           </p>
           <div className="cta-rating-actions">
-            <Button className="cta-rating-primary">
+            {/* <Button className="cta-rating-primary">
               <Download className="w-5 h-5" />
               Download Certificate
-            </Button>
-            <Button variant="outline" className="cta-rating-secondary">
-              Contact Investor Relations
+            </Button> */}
+            <Button variant="outline" className="cta-rating-secondary"
+              onClick={() => navigate('/contact')}>
+              Contact Team
               <ExternalLink className="w-4 h-4" />
             </Button>
           </div>

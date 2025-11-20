@@ -833,13 +833,13 @@
 }
 
 .cta-governance-secondary {
-  background: transparent;
-  color: var(--aham-navy);
+  background:  #ed2636;
+  color:#ffff;
   padding: 16px 48px;
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 8px;
-  border: 2px solid var(--aham-navy);
+  /* border: 2px solid var(--aham-navy); */
   transition: all 0.3s ease;
 }
 

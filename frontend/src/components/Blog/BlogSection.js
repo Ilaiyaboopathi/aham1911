@@ -272,7 +272,7 @@ const BlogSection = () => {
 >
   <Link 
     to="/blog"
-    className="btn-outline px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition inline-block"
+    className="btn  bg-[#ed2636] px-6 py-3 text-white rounded-lg hover:bg-primary-600 hover:text-white transition inline-block"
   >
     View All Articles
   </Link>

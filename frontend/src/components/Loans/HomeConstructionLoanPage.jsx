@@ -445,7 +445,7 @@ const scrollToSection = (id) => {
             <motion.button
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.96 }}
-              className="bg-primary-600 hover:bg-primary-700 text-white px-10 py-4 rounded-2xl font-semibold text-xl shadow-xl transition-all"
+              className="bg-[#ed2636] hover:bg-primary-700 text-white px-10 py-4 rounded-2xl font-semibold text-xl shadow-xl transition-all"
             >
               Request a Quote
             </motion.button>
@@ -537,8 +537,8 @@ const scrollToSection = (id) => {
             whileTap={{ scale: 0.98 }}
             className="
               px-10 py-4 rounded-full text-white font-semibold 
-              bg-gradient-to-r from-primary-600 to-primary-500 
-              shadow-lg hover:shadow-2xl transition
+             bg-[#ed2636]
+              shadow-lg hover:bg-primary-600 transition
             "
           >
             Check Your Eligibility Now
@@ -722,7 +722,7 @@ const scrollToSection = (id) => {
           href="https://aham.mbwhost.in/emi-calculator"
           whileHover={{ scale: 1.07 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-white text-primary-700 hover:bg-primary-50 px-10 py-4 rounded-xl font-semibold text-xl transition-all duration-300 shadow-xl"
+          className="bg-[#ed2636] text-white-700 hover:text-black hover:bg-primary-50 px-10 py-4 rounded-xl font-semibold text-xl transition-all duration-300 shadow-xl"
         >
           Calculate EMI
         </motion.a>
@@ -832,7 +832,7 @@ const scrollToSection = (id) => {
 href="https://aham.mbwhost.in/contact"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-large"
+    className="bg-[#ed2636] text-white-600 hover:text-black hover:bg-primary-50 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-large"
   >
    Talk to Our Loan Expert
   </motion.a>

@@ -253,12 +253,12 @@ const LifeAtAham = () => {
             Join us and be part of a workplace where your work has meaning, your voice has value, and your growth has no boundaries.
           </p>
           <div className="cta-buttons">
-           <Button
+           {/* <Button
               className="cta-primary"
               onClick={() => navigate("/careers")}
             >
               Explore Open Positions
-            </Button>
+            </Button> */}
 
               <Button
                 variant="outline"

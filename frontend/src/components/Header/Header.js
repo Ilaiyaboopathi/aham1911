@@ -153,6 +153,14 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
 
     {/* LEFT SIDE — CENTERED */}
     <div className="flex-1 flex justify-center items-center gap-6">
+      
+
+      <button onClick={() => navigate('/scorecard')} className="flex items-center gap-2 bg-yellow-500 text-primary-900 px-3 py-1 rounded-full animate-pulse">
+        <StarIcon className="h-4" /> {t('header.annoncement')}
+      </button>
+
+       <span>|</span>
+
       <a href={getPhoneLink()} className="flex items-center gap-2">
         <PhoneIcon className="h-4" /> {t('header.call')}
       </a>
@@ -266,7 +274,7 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
                   <>
                     {item.hasDropdown ? (
                       <>
-                        <button className="flex items-center gap-1 z-99 hover:text-primary-600 font-medium">
+                        <button className="flex items-center gap-1 z-99 hover:text-red-600 font-medium">
                           {item.label}<ChevronDownIcon className="h-4" />
                         </button>
 
@@ -274,7 +282,7 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
                           <div className="absolute left-0 mt-3 w-[250px] bg-white rounded-lg shadow-lg py-2 z-50">
                             {item.submenu.map((subItem, index) => (
                               <button key={index} onClick={() => navigate(subItem.href)}
-                                className="block w-full text-left px-4 py-3 text-sm hover:bg-gray-50">
+                                className="block w-full text-left hover:text-red-600 px-4 py-3 text-sm hover:bg-gray-50">
                                 {subItem.label}
                               </button>
                             ))}
@@ -282,7 +290,7 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
                         )}
                       </>
                     ) : (
-                      <button onClick={() => navigate(item.href)} className="hover:text-primary-600 font-medium">
+                      <button onClick={() => navigate(item.href)} className="hover:text-red-600 font-medium">
                         {item.label}
                       </button>
                     )}
@@ -333,7 +341,7 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
 
             {/* LOGIN BUTTON ✅ unchanged */}
             <Link to="/customer-360-eligibility-calculator">
-              <button className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700">
+              <button className="bg-[#ed2636] text-white px-4 py-2 rounded-lg hover:bg-primary-700">
                 {t('header.customerLogin')}
               </button>
             </Link>

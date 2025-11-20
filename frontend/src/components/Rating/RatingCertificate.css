@@ -849,13 +849,13 @@
 }
 
 .cta-rating-secondary {
-  background: transparent;
-  color: var(--aham-navy);
+  background:  #ed2636;
+  color: #fff;
   padding: 16px 48px;
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 8px;
-  border: 2px solid var(--aham-navy);
+  /* border: 2px solid var(--aham-navy); */
   display: inline-flex;
   align-items: center;
   gap: 8px;

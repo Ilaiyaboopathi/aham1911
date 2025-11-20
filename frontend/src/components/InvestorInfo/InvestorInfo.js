@@ -3,8 +3,10 @@ import { Button } from '../ui/button';
 import { Card } from '../ui/card';
 import { TrendingUp, Target, Shield, CheckCircle2, ArrowRight, BarChart3, Users, FileText } from 'lucide-react';
 import './InvestorInfo.css';
+import { useNavigate } from "react-router-dom";
 
 const InvestorInfo = () => {
+  const navigate = useNavigate();
   const visionPoints = [
     { icon: <Target className="w-5 h-5" />, text: 'Purpose-led growth strategy' },
     { icon: <BarChart3 className="w-5 h-5" />, text: 'Strong operational discipline' },
@@ -129,7 +131,7 @@ const InvestorInfo = () => {
           <div className="performance-layout">
             <div className="performance-visual">
               <img 
-                 src="/img/Investor/Performance-metrics.png"
+                 src="/img/Investor/Performance-metrics.webp"
                 alt="Performance metrics"
                 className="performance-image"
               />
@@ -186,7 +188,7 @@ const InvestorInfo = () => {
           <div className="governance-content">
             <div className="governance-visual">
               <img 
-                src="/img/Investor/Corporate-governance.png"
+                src="/img/Investor/Corporate-governance.webp"
                 alt="Corporate governance"
                 className="governance-image"
               />
@@ -213,12 +215,15 @@ const InvestorInfo = () => {
           <h2 className="cta-heading">We welcome investors who believe in responsible growth and long-term partnership.</h2>
           <p className="cta-subtext">Want to learn more or connect with our investor relations team? Let's start a conversation.</p>
           <div className="cta-action-buttons">
-            <Button className="cta-btn-primary">
+            {/* <Button className="cta-btn-primary">
               Schedule a Meeting
               <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" className="cta-btn-outline">
-              Download Investor Kit
+            </Button> */}
+            <Button
+             variant="outline" 
+             className="cta-btn-outline"
+             onClick={() => navigate('/contact') }>
+              Contact
             </Button>
           </div>
         </div>

@@ -217,7 +217,7 @@ const WhyChooseSection = () => {
 >
   <motion.a
     href="https://aham.mbwhost.in/about"
-    className="btn-primary text-lg px-8 py-4 inline-block"
+    className="btn-primary bg-[#ed2636] text-lg px-8 py-4 inline-block"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >

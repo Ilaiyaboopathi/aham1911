@@ -613,8 +613,8 @@ min-height: 50vh;
 }
 
 .cta-btn-primary-dsa {
-  background: var(--aham-gold);
-  color: var(--aham-navy);
+  background: #ed2636;
+  color:#fff;
   padding: 16px 48px;
   font-size: 1.125rem;
   font-weight: 700;
@@ -624,13 +624,14 @@ min-height: 50vh;
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(234, 179, 8, 0.3);
+  /* box-shadow: 0 4px 20px rgba(234, 179, 8, 0.3); */
 }
 
 .cta-btn-primary-dsa:hover {
-  background: var(--aham-gold-hover);
+  background: #ffffff;
+  color:#030303;
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(234, 179, 8, 0.4);
+  /* box-shadow: 0 6px 30px rgba(234, 179, 8, 0.4); */
 }
 
 .cta-btn-secondary-dsa {

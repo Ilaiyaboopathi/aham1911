@@ -14,7 +14,7 @@ const RiskClassification = () => {
     <div className="bg-white text-gray-800">
       {/* ===== Hero Section ===== */}
       <section
-        className="relative text-white min-h-[75vh] flex flex-col justify-center items-center text-center overflow-hidden"
+        className="relative text-white min-h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden"
         style={{
           backgroundImage:
             "linear-gradient(rgba(45,52,124,0.6), rgba(45,52,124,0.6)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80')",

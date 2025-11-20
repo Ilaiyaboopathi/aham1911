@@ -89,7 +89,7 @@ const FloatingActions = ({ onEnquiryClick }) => {
         animate="visible"
         exit="hidden"
         variants={containerVariants}
-        className="fixed right-4 top-1/2 -translate-y-1/2 z-40 space-y-3"
+        className="fixed right-4 top-60 z-40 space-y-3"
       >
         {stickyActionItems.map((item, index) => (
           <motion.button
@@ -106,7 +106,7 @@ const FloatingActions = ({ onEnquiryClick }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.1 }}
           >
-            <item.icon className="h-5 w-5" />
+            <item.icon className="h-6 w-6" />
             
             <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
               <div className="bg-gray-900 text-white text-sm px-3 py-2 rounded-lg whitespace-nowrap">

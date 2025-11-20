@@ -254,13 +254,13 @@
 }
 
 .cta-secondary {
-  background: transparent;
+  background:  #ed2636;
   color: white;
   padding: 16px 48px;
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 8px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   cursor: pointer;
   transition: all 0.3s ease;
 }

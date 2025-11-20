@@ -398,7 +398,7 @@ const EligibilityScorecardSection = () => {
                 className={`flex items-center space-x-2 px-8 py-3 rounded-lg font-semibold ${
                   !responses[questions[currentStep].id]
                     ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                    : 'bg-primary-600 hover:bg-primary-700 text-white'
+                    : 'bg-[#ed2636] hover:bg-primary-700 text-white'
                 }`}
               >
                 <span>{currentStep === questions.length - 1 ? 'Get Result' : 'Next'}</span>

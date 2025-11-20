@@ -94,7 +94,7 @@ const AboutUs = () => {
                 </p>
                <a
    href="https://aham.mbwhost.in/contact"
-  className="mt-4 px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition inline-block"
+  className="mt-4 px-5 py-2 bg-[#ed2636] text-white rounded-lg shadow hover:bg-blue-700 transition inline-block"
 >
   Contact Us
 </a>

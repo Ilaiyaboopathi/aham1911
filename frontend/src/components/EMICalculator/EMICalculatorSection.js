@@ -277,14 +277,14 @@ const EMICalculatorSection = () => {
                 </div>
 
                 {/* Action Button */}
-              <div className="flex flex-col sm:flex-row gap-4">
-  <button
-    onClick={() => window.location.href = 'https://aham.mbwhost.in/customer-360-eligibility-calculator'}
-    className="btn-primary flex-1 flex items-center justify-center space-x-2"
-  >
-    <span>{t('common.applyNow', 'Apply Now')}</span>
-  </button>
-</div>
+              <div className="sm:flex-row gap-4 ">
+                <button
+                  onClick={() => window.location.href = 'https://aham.mbwhost.in/customer-360-eligibility-calculator'}
+                  className="btn-primary bg-[#ed2636] flex-1 flex items-center justify-center space-x-2 "
+                >
+                  <span>{t('common.applyNow', 'Apply Now')}</span>
+                </button>
+              </div>
               </>
             ) : (
               <div className="bg-white rounded-3xl shadow-large p-12 text-center">

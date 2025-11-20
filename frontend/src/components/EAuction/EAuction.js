@@ -60,6 +60,39 @@ const EAuction = () => {
       auctionDate: '20 Feb 2025',
       inspectionDate: '15-17 Feb 2025',
       status: 'Upcoming'
+    },
+     {
+      id: 4,
+      title: 'Residential Property - Prime Location',
+      location: 'Sector 21, Pune, Maharashtra',
+      type: 'Residential',
+      reservePrice: '45,00,000',
+      emd: '4,50,000',
+      auctionDate: '15 Feb 2025',
+      inspectionDate: '10-12 Feb 2025',
+      status: 'Active'
+    },
+    {
+      id: 5,
+      title: 'Commercial Space - City Center',
+      location: 'MG Road, Bangalore, Karnataka',
+      type: 'Commercial',
+      reservePrice: '1,20,00,000',
+      emd: '12,00,000',
+      auctionDate: '18 Feb 2025',
+      inspectionDate: '13-15 Feb 2025',
+      status: 'Active'
+    },
+    {
+      id: 6,
+      title: 'Plot - Upcoming Residential Area',
+      location: 'Whitefield, Bangalore, Karnataka',
+      type: 'Plot',
+      reservePrice: '35,00,000',
+      emd: '3,50,000',
+      auctionDate: '20 Feb 2025',
+      inspectionDate: '15-17 Feb 2025',
+      status: 'Upcoming'
     }
   ];
 
@@ -252,10 +285,11 @@ const EAuction = () => {
                     </div>
                   </div>
 
-                  {/* <Button className="property-view-btn">
+                  <Button className="property-view-btn
+                  "  onClick={() => navigate("/")}>
                     View Details
                     <ExternalLink className="w-4 h-4" />
-                  </Button> */}
+                  </Button>
                 </div>
               </Card>
             ))}

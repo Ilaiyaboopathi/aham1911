@@ -470,7 +470,7 @@
 
 .property-view-btn {
   width: 100%;
-  background: var(--aham-navy);
+  background:  #ed2636;
   color: white;
   padding: 12px 24px;
   font-size: 1rem;
@@ -751,8 +751,8 @@
 
 .regulatory-btn {
   width: 100%;
-  background: var(--aham-gold);
-  color: var(--aham-navy);
+  background:  #ed2636;
+  color: #ffff;
   padding: 14px 24px;
   font-size: 1rem;
   font-weight: 700;
@@ -767,6 +767,7 @@
 
 .regulatory-btn:hover {
   background: var(--aham-gold-hover);
+  color: #030303;
   transform: translateY(-2px);
 }
 

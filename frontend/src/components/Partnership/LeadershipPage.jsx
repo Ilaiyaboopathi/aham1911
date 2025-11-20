@@ -283,7 +283,7 @@ const LeadershipPage = () => {
 
                   <button
                     onClick={() => setSelectedMember(member)}
-                    className="text-blue-600 font-medium hover:underline"
+                    className="text-red-600 font-medium hover:text-blue-800 "
                   >
                     View Profile →
                   </button>
@@ -325,7 +325,7 @@ const LeadershipPage = () => {
                 <div className="p-3 text-center">
                     <button
                       onClick={() => setSelectedDirector(director)}
-                      className="mt-4 text-blue-600 hover:text-blue-800  text-sm font-semibold"
+                      className="mt-4 text-red-600 hover:text-blue-800  text-sm font-semibold"
                     >
                       View Profile →
                     </button>

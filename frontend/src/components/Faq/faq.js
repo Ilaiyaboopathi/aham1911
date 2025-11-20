@@ -93,7 +93,7 @@ export default function Faq() {
 
           <div className="w-full md:w-56 text-right">
             <div className="text-sm text-slate-500">Need more help?</div>
-            <a href="/contact" className="inline-block mt-2 px-4 py-2 bg-[#063a7a] text-white rounded-lg shadow hover:opacity-95 font-medium">
+            <a href="/contact" className="inline-block mt-2 px-4 py-2 bg-[#ed2636] hover:bg-[#1f2654] text-white rounded-lg shadow hover:opacity-95 font-medium">
               Contact Us
             </a>
           </div>
