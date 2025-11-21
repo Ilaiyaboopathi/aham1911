@@ -43,6 +43,7 @@ import RatingCertificate from "./components/Rating/RatingCertificate";
 import SecuredAssets from "./components/SecuredAssets/SecuredAssets";
 import CorporateGovernance from "./components/Corporate/CorporateGovernance";
 import Leadership from "./components/Partnership/LeadershipPage.jsx";
+import DSAPartnerProgram from "./components/DSA/DSAPartnerProgram";
 
 
 // Modals
@@ -555,6 +556,22 @@ function App() {
                             onCreditScoreClick={() => setShowCreditScoreModal(true)}
                           />
                           <Leadership  />
+                          <Footer />
+                        </>
+                      }
+                    />
+
+                     {/* ✅ Added Route for DSA Partner Program Page */}
+                    <Route
+                      path="/dsa-partner-program"
+                      element={
+                        <>
+                          <Header
+                            currentLanguage={currentLanguage}
+                            onLanguageChange={handleLanguageChange}
+                            onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                          />
+                          <DSAPartnerProgram />
                           <Footer />
                         </>
                       }

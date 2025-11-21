@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '../ui/button';
 import { Card } from '../ui/card';
-import { Shield, FileText, Download, CheckCircle2, Users, BarChart3, Target, Award, Eye, Lock, TrendingUp, BookOpen, UserCheck, AlertCircle, RefreshCw, ArrowRight, ExternalLink, Search } from 'lucide-react';
+import { Shield, FileText, Download, CheckCircle2, Users, BarChart3, Target, Award, Eye, Lock, TrendingUp, BookOpen, UserCheck, AlertCircle, ShieldCheck, FileCheck, ExternalLink, Search } from 'lucide-react';
 import './CorporateGovernance.css';
 import { useNavigate } from "react-router-dom";
 
@@ -82,7 +82,10 @@ const CorporateGovernance = () => {
     { text: 'Adherence to RBI and NHB guidelines', icon: <CheckCircle2 className="w-5 h-5" /> },
     { text: 'Implementation of Anti-Money Laundering (KYC & AML) protocols', icon: <Lock className="w-5 h-5" /> },
     { text: 'Clear escalation paths through Whistleblower and Grievance mechanisms', icon: <AlertCircle className="w-5 h-5" /> },
-    { text: 'Periodic independent audits to strengthen internal control environment', icon: <BarChart3 className="w-5 h-5" /> }
+    { text: 'Periodic independent audits to strengthen internal control environment', icon: <BarChart3 className="w-5 h-5" /> },
+     // ⭐ New Items
+  { text: 'Robust Data Protection and Privacy safeguards to ensure secure customer information handling', icon: <ShieldCheck className="w-5 h-5" /> },
+  { text: 'Comprehensive Regulatory Reporting framework ensuring transparency ', icon: <FileCheck className="w-5 h-5" /> }
   ];
 
   const improvementCommitments = [

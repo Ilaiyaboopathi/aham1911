@@ -33,7 +33,7 @@ const InvestorInfo = () => {
      
  <section
           className="investor-hero bg-cover h-[55vh] bg-center bg-no-repeat w-full"
-          style={{ backgroundImage: "url('/img/Banners/Investor-info.webp')" }}>
+          style={{ backgroundImage: "url('/img/Banners/Investor-Info.webp')" }}>
 
           {/* DARK OVERLAY FOR OPACITY */}
             <div className="absolute inset-0 bg-black/60"></div>

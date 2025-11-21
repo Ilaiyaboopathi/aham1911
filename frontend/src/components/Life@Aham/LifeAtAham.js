@@ -4,6 +4,7 @@ import { Card } from '../ui/card';
 import { useNavigate } from "react-router-dom";
 
 import { CheckCircle2, Users, Target, TrendingUp, Heart, Sparkles, Award, BookOpen } from 'lucide-react';
+import { Trophy, Star, Medal } from "lucide-react";
 import './LifeAtAham.css';
 
 const LifeAtAham = () => {
@@ -244,6 +245,140 @@ const LifeAtAham = () => {
           </div>
         </div>
       </section>
+
+
+      {/* Section 5: Awards & Recognitions */}
+ 
+      <section className="awards-section">
+        <div className="section-container">
+          <div className="awards-layout">
+            {/* Left Side - Content */}
+            <div className="awards-content">
+              <div className="section-header">
+                <span className="section-label">Recognition & Excellence</span>
+                <h2 className="section-title">Our Awards & Achievements</h2>
+              </div>
+              
+              <p className="awards-intro">
+                At Aham Housing Finance, excellence isn't just a goal—it's our standard. 
+                Our commitment to providing innovative financial solutions and exceptional customer service 
+                has been recognized by industry leaders and prestigious institutions across the nation.
+              </p>
+
+              <div className="awards-list">
+                <div className="award-item">
+                  <div className="award-icon-wrapper">
+                    <Award className="award-icon" />
+                  </div>
+                  <div className="award-details">
+                    <h4 className="award-title">Best Housing Finance Company 2024</h4>
+                    <p className="award-description">
+                      Recognized for outstanding contribution to affordable housing and customer-centric lending solutions
+                    </p>
+                    <span className="award-year">2024</span>
+                  </div>
+                </div>
+
+                <div className="award-item">
+                  <div className="award-icon-wrapper">
+                    <Award className="award-icon" />
+                  </div>
+                  <div className="award-details">
+                    <h4 className="award-title">Excellence in Financial Innovation</h4>
+                    <p className="award-description">
+                      Honored for pioneering interview-based credit assessment and serving customers without formal income proof
+                    </p>
+                    <span className="award-year">2023</span>
+                  </div>
+                </div>
+
+                <div className="award-item">
+                  <div className="award-icon-wrapper">
+                    <Award className="award-icon" />
+                  </div>
+                  <div className="award-details">
+                    <h4 className="award-title">Top Employer in South India</h4>
+                    <p className="award-description">
+                      Recognized for creating an inclusive workplace culture and exceptional employee development programs
+                    </p>
+                    <span className="award-year">2023</span>
+                  </div>
+                </div>
+
+                <div className="award-item">
+                  <div className="award-icon-wrapper">
+                    <Award className="award-icon" />
+                  </div>
+                  <div className="award-details">
+                    <h4 className="award-title">Customer Service Excellence Award</h4>
+                    <p className="award-description">
+                      Awarded for maintaining highest customer satisfaction scores and transparent lending practices
+                    </p>
+                    <span className="award-year">2022</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="awards-stats">
+                <div className="stat-card">
+                  <div className="stat-number">15+</div>
+                  <div className="stat-label">Industry Awards</div>
+                </div>
+                <div className="stat-card">
+                  <div className="stat-number">98%</div>
+                  <div className="stat-label">Customer Satisfaction</div>
+                </div>
+                <div className="stat-card">
+                  <div className="stat-number">4.8/5</div>
+                  <div className="stat-label">Industry Rating</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Images */}
+            <div className="awards-images">
+              <div className="awards-image-wrapper primary-award">
+                <img 
+                  src="/img/ahamlife/Team-celebration.webp"
+                  alt="Award ceremony celebration"
+                  className="awards-img"
+                />
+                <div className="image-overlay">
+                  <div className="overlay-badge">
+                    <Award className="overlay-icon" />
+                    <span>Award Winning Team</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="awards-image-wrapper secondary-award">
+                <img 
+                  src="/img/ahamlife/Team-banner.webp"
+                  alt="Team excellence"
+                  className="awards-img"
+                />
+              </div>
+               <div className="awards-image-wrapper secondary-award">
+                <img 
+                  src="/img/ahamlife/Team-banner.webp"
+                  alt="Team excellence"
+                  className="awards-img"
+                />
+              </div>
+
+              <div className="awards-badge-card">
+                <div className="badge-icon">
+                  <Sparkles className="w-8 h-8" />
+                </div>
+                <h4 className="badge-title">Excellence in Service</h4>
+                <p className="badge-text">Recognized by leading financial institutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* CTA Section */}
       <section className="cta-section">
