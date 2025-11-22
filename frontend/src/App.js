@@ -45,6 +45,14 @@ import CorporateGovernance from "./components/Corporate/CorporateGovernance";
 import Leadership from "./components/Partnership/LeadershipPage.jsx";
 import DSAPartnerProgram from "./components/DSA/DSAPartnerProgram";
 
+import HomeCompositeLoanPage from './components/Loans/CompositeLoanPage.jsx';
+import NRILoanPage from './components/Loans/NRILoanPage.jsx';
+import HomePurchaseLoanPage from './components/Loans/HomePurchaseLoanPage.jsx';
+import HomeRenovationLoanPage from './components/Loans/HomeRenovationLoanpage.jsx';
+import HomeExtensionLoanPage from './components/Loans/HomeExtensionLoanPage.jsx';
+import BalanceTransferLoan from './components/Loans/BalanceTransferLoan.jsx';
+import TopUpLoan from './components/Loans/TopUpLoan.jsx';
+
 
 // Modals
 import EnquiryModal from './components/Modals/EnquiryModal';
@@ -52,6 +60,7 @@ import CreditScoreModal from './components/Modals/CreditScoreModal';
 
 // Utils
 import { scrollToSection } from './utils/helpers';
+// import BalanceTransferLoan from './components/Loans/BalanceTransferLoan.jsx';
 
 function App() {
   const { i18n } = useTranslation();
@@ -576,6 +585,153 @@ function App() {
                         </>
                       }
                     />
+
+                    {/* Home Composite Loan Page */}
+          <Route
+            path="/home-composite-loan"
+            element={
+              <>
+                <Header
+                  currentLanguage={currentLanguage}
+                  onLanguageChange={handleLanguageChange}
+                  onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                />
+                <HomeCompositeLoanPage />
+                 <FloatingActions
+                  onEnquiryClick={() => setShowEnquiryModal(true)}
+                  onEMIClick={() => scrollToSection('emi-calculator')}
+                  onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                />
+                <Footer />
+              </>
+            }
+          />
+
+                     {/* Home NRI Loan Page */}
+          <Route
+            path="/nri-loan"
+            element={
+              <>
+                <Header
+                  currentLanguage={currentLanguage}
+                  onLanguageChange={handleLanguageChange}
+                  onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                />
+                <NRILoanPage />
+                 <FloatingActions
+                  onEnquiryClick={() => setShowEnquiryModal(true)}
+                  onEMIClick={() => scrollToSection('emi-calculator')}
+                  onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                />
+                <Footer />
+              </>
+            }
+          />
+
+                           {/* Home Home purchase Loan Page */}
+          <Route
+            path="/home-purchase-loan"
+            element={
+              <>
+                <Header
+                  currentLanguage={currentLanguage}
+                  onLanguageChange={handleLanguageChange}
+                  onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                />
+                <HomePurchaseLoanPage />
+                 <FloatingActions
+                  onEnquiryClick={() => setShowEnquiryModal(true)}
+                  onEMIClick={() => scrollToSection('emi-calculator')}
+                  onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                />
+                <Footer />
+              </>
+            }
+          />
+
+                            {/* Home Home Renovation Loan Page */}
+          <Route
+            path="/home-renovation-loan"
+            element={
+              <>
+                <Header
+                  currentLanguage={currentLanguage}
+                  onLanguageChange={handleLanguageChange}
+                  onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                />
+                <HomeRenovationLoanPage />
+                 <FloatingActions
+                  onEnquiryClick={() => setShowEnquiryModal(true)}
+                  onEMIClick={() => scrollToSection('emi-calculator')}
+                  onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                />
+                <Footer />
+              </>
+            }
+          />
+
+          
+                            {/* Home  Extension Loan Page */}
+          <Route
+            path="/home-extension-loan"
+            element={
+              <>
+                <Header
+                  currentLanguage={currentLanguage}
+                  onLanguageChange={handleLanguageChange}
+                  onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                />
+                <HomeExtensionLoanPage />
+                 <FloatingActions
+                  onEnquiryClick={() => setShowEnquiryModal(true)}
+                  onEMIClick={() => scrollToSection('emi-calculator')}
+                  onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                />
+                <Footer />
+              </>
+            }
+          />
+
+                             {/* Home  balance Transfer Loan Page */}
+                        <Route
+                          path="/balance-transfer-loan"
+                          element={
+                            <>
+                              <Header
+                                currentLanguage={currentLanguage}
+                                onLanguageChange={handleLanguageChange}
+                                onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                              />
+                              <BalanceTransferLoan />
+                              <FloatingActions
+                                onEnquiryClick={() => setShowEnquiryModal(true)}
+                                onEMIClick={() => scrollToSection('emi-calculator')}
+                                onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                              />
+                              <Footer />
+                            </>
+                          }
+                        />
+                           {/* Home  balance Transfer Loan Page */}
+                        <Route
+                          path="/top-up-loan"
+                          element={
+                            <>
+                              <Header
+                                currentLanguage={currentLanguage}
+                                onLanguageChange={handleLanguageChange}
+                                onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                              />
+                              <TopUpLoan />
+                              <FloatingActions
+                                onEnquiryClick={() => setShowEnquiryModal(true)}
+                                onEMIClick={() => scrollToSection('emi-calculator')}
+                                onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                              />
+                              <Footer />
+                            </>
+                          }
+                        />
 
         </Routes>
       </div>
