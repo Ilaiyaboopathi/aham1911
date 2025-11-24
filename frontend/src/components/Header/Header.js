@@ -60,7 +60,7 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
         { key: 'extension', label: 'Home Extension Loan', href: '/home-extension-loan', description: 'Add more space to your home to fit your lifestyle, whether it’s a new room, floor, or extended area.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
         { key: 'balance', label: 'Balance Transfer Loan', href: '/balance-transfer-loan', description: 'Move your existing home loan to us and reduce your EMIs with better interest rates and smoother repayment.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
         { key: 'nri', label: 'NRI Home Loan', href: '/nri-loan', description: 'Tailored financing solutions for NRIs to purchase, build, or improve a home in India with simplified documentation.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
-        { key: 'topup', label: 'Top-up Loan', href: '/top-up', description: 'Get additional funds on your existing loan for personal or home needs without extra paperwork.',  image: '/img/megamenu/HomeConstructionLoan.jpg' }
+        { key: 'topup', label: 'Top-up Loan', href: '/top-up-loan', description: 'Get additional funds on your existing loan for personal or home needs without extra paperwork.',  image: '/img/megamenu/HomeConstructionLoan.jpg' }
       ]
     },
 
