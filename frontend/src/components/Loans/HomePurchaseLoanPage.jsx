@@ -363,7 +363,7 @@ const scrollToSection = (id) => {
         className="relative"
       >
         <img
-          src="img/loan-overview/purchase-loan.png"
+          src="img/loan-overview/purchase-loan.webp"
           alt="Resale Home Loan Overview"
           className="rounded-2xl shadow-large w-full"
         />

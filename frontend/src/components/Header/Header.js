@@ -64,7 +64,7 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
       ]
     },
 
-    { key: 'mortgageLoans', label: 'Mortgage Loans', href: '/home-construction-loan' },
+    { key: 'mortgageLoans', label: 'Mortgage Loans', href: '/mortage-loan' },
     { key: 'pmay', label: 'PMAY 2.0', href: '/pmay2' },
 
     {

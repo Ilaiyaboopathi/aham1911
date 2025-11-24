@@ -216,7 +216,7 @@ const scrollToSection = (id) => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url(img/loan-banners/Balance-Transfer-Loan.png)',
+            backgroundImage: 'url(img/loan-banners/Balance-Transfer-Loan.webp)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-800/80 to-transparent"></div>
@@ -360,7 +360,7 @@ const scrollToSection = (id) => {
         className="relative"
       >
         <img
-           src="img/construction-loan/home-construction-overview.png"
+           src="img/loan-overview/balance-transfer-loan.webp"
           alt="Balance Transfer Overview"
           className="rounded-2xl shadow-large w-full"
         />
