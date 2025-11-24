@@ -233,10 +233,11 @@ const scrollToSection = (id) => {
             className="max-w-3xl"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Build Your Dream Home with AHAM Home Construction Loan
+             Reduce Your EMIs with AHAM Balance Transfer Loan
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              No salary slips or ITR? No problem. AHAM helps you build your home with easy construction financing.
+              Transfer your existing home loan to AHAM for lower interest rates, better terms, and optional top-up funding.
+
             </p>
            <div className="flex flex-col sm:flex-row gap-4">
 

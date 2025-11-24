@@ -221,7 +221,7 @@ const scrollToSection = (id) => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url(img/construction-loan/home-construction-loan.png)',
+            backgroundImage: 'url(img/loan-banners/NRI-loan.png)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-800/80 to-transparent"></div>
@@ -235,10 +235,11 @@ const scrollToSection = (id) => {
             className="max-w-3xl"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Build Your Dream Home with AHAM Home Construction Loan
+             Own a Home in India with AHAM NRI Home Loan
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              No salary slips or ITR? No problem. AHAM helps you build your home with easy construction financing.
+              Specially designed for salaried NRIs—simple documentation, flexible tenure, and secure funding for your Indian property.
+
             </p>
            <div className="flex flex-col sm:flex-row gap-4">
 

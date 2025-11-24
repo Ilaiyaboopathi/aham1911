@@ -52,6 +52,7 @@ import HomeRenovationLoanPage from './components/Loans/HomeRenovationLoanpage.js
 import HomeExtensionLoanPage from './components/Loans/HomeExtensionLoanPage.jsx';
 import BalanceTransferLoan from './components/Loans/BalanceTransferLoan.jsx';
 import TopUpLoan from './components/Loans/TopUpLoan.jsx';
+import MortgageLoan from './components/Loans/MortgageLoan.jsx';
 
 
 // Modals
@@ -723,6 +724,27 @@ function App() {
                                 onCreditScoreClick={() => setShowCreditScoreModal(true)}
                               />
                               <TopUpLoan />
+                              <FloatingActions
+                                onEnquiryClick={() => setShowEnquiryModal(true)}
+                                onEMIClick={() => scrollToSection('emi-calculator')}
+                                onScorecardClick={() => scrollToSection('eligibility-scorecard')}
+                              />
+                              <Footer />
+                            </>
+                          }
+                        />
+
+                         {/* Home mortage Loan Page */}
+                        <Route
+                          path="/mortage-loan"
+                          element={
+                            <>
+                              <Header
+                                currentLanguage={currentLanguage}
+                                onLanguageChange={handleLanguageChange}
+                                onCreditScoreClick={() => setShowCreditScoreModal(true)}
+                              />
+                              <MortgageLoan />
                               <FloatingActions
                                 onEnquiryClick={() => setShowEnquiryModal(true)}
                                 onEMIClick={() => scrollToSection('emi-calculator')}

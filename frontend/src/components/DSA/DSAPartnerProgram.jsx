@@ -40,6 +40,8 @@ const DSAPartnerProgram = () => {
     }
   };
 
+  
+
   // Value Propositions
   const valuePropositions = [
     {
@@ -191,7 +193,7 @@ const DSAPartnerProgram = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Banner Section */}
-      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -215,7 +217,7 @@ const DSAPartnerProgram = () => {
             <p className="text-2xl md:text-3xl text-white/90 font-medium max-w-4xl mx-auto leading-relaxed">
               Grow your income by helping families achieve their dream of home ownership
             </p>
-            <div className="mt-10 flex flex-wrap gap-4 justify-center">
+            {/* <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -232,14 +234,14 @@ const DSAPartnerProgram = () => {
               >
                 Learn More
               </motion.button>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>
 
       {/* Sticky Navigation */}
-      <div className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
-      {/* <div className="sticky top-[80px] z-50 bg-white shadow-lg border-b border-gray-200"> */}
+      {/* <div className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200"> */}
+      <div className="sticky top-[80px] z-50 bg-white shadow-lg border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="flex overflow-x-auto scrollbar-hide py-4 gap-2">
             {[

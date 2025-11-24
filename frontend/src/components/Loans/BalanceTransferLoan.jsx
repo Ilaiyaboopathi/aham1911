@@ -216,7 +216,7 @@ const scrollToSection = (id) => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url(img/construction-loan/home-construction-loan.png)',
+            backgroundImage: 'url(img/loan-banners/Balance-Transfer-Loan.png)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-800/80 to-transparent"></div>

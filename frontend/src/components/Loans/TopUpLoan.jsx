@@ -1,7 +1,7 @@
 import React, { useState, useEffect  } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircleIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
-import { CheckCircle, User, Briefcase, DollarSign, Ruler , FileText, Globe, Star, Shield, Home } from "lucide-react";
+import { CheckCircle, User, Briefcase, DollarSign, Ruler , FileText, Globe, Star, Shield, Home, ArrowUpCircleIcon, WalletIcon } from "lucide-react";
 import { 
   HomeIcon, 
   CurrencyRupeeIcon, 
@@ -28,50 +28,50 @@ const TopUpLoan = () => {
   };
 
   // Key Benefits Data
-  const benefits = [
-    {
-      icon: BanknotesIcon,
-      title: 'Loan up to ₹30 Lakhs',
-      description: 'Get substantial funding for your dream home construction'
-    },
-    {
-      icon: ClockIcon,
-      title: 'Tenure up to 20 Years',
-      description: 'Flexible repayment options that suit your financial planning'
-    },
-    {
-      icon: ChartBarIcon,
-      title: 'Disbursement Linked to Progress',
-      description: 'Funds released based on construction milestones'
-    },
-    {
-      icon: ShieldCheckIcon,
-      title: 'Competitive Interest Rates',
-      description: 'Enjoy attractive rates designed for your benefit'
-    },
-    {
-      icon: CurrencyRupeeIcon,
-      title: 'No Prepayment Penalty',
-      description: 'Pay off your loan early without any additional charges'
-    },
-    {
-      icon: HomeIcon,
-      title: 'Covers Renovation & Repair',
-      description: 'Finance both new construction and home improvements'
-    }
-  ];
+const benefits = [
+  {
+    icon: ArrowUpCircleIcon,
+    title: "Additional Funding Without New Loan",
+    description: "Get extra funds on your existing AHAM home loan without taking a separate loan."
+  },
+  {
+    icon: BanknotesIcon,
+    title: "Loan up to ₹10 Lakhs – ₹25 Lakhs",
+    description: "High-value top-up loan depending on your repayment track and property value."
+  },
+  {
+    icon: ClockIcon,
+    title: "Flexible Tenure up to 15 Years",
+    description: "Extend your repayment period or keep it shorter based on your preference."
+  },
+  {
+    icon: ShieldCheckIcon,
+    title: "Quick & Hassle-Free Processing",
+    description: "Fast approval based on repayment history with minimal additional documentation."
+  },
+  {
+    icon: WalletIcon,
+    title: "Competitive Interest Rates",
+    description: "Top-up loan offered at attractive rates lower than typical personal loans."
+  },
+  {
+    icon: HomeIcon,
+    title: "Multi-Purpose Usage",
+    description: "Use funds for renovation, education, medical expenses, furniture, business needs, or personal requirements."
+  }
+];
+
 
   // Eligibility Criteria
-  const eligibility = [
-    'Age: 21 to 65 years',
-    'Indian Residents or NRIs',
-    'Salaried, Self-Employed, or Business Professionals',
-    'Stable income source',
-    'Approved construction plan and building permit',
-    'Clear land title',
-    'Good credit history preferred but not mandatory',
-      "Minimum plot size requirement",
-  ];
+const eligibility = [
+  "An active home loan with AHAM Housing Finance",
+  "Minimum 12 months of clear repayment history",
+  "Good repayment track record with no major overdue",
+  "Sufficient repayment capacity based on FOIR norms (typically up to 50%)",
+  "Property with adequate value to support additional funding",
+  "Top-up amount assessed based on outstanding loan, income, and LTV norms"
+];
+
   // Matching icons & colors for each item
 const icons = [
   { icon: <User />, from: "from-blue-500", to: "to-cyan-400" },
@@ -85,86 +85,81 @@ const icons = [
 ];
 
   // Documents Required
-  const documents = {
-    common: [
-      'Identity Proof (Aadhaar, PAN, Passport, Voter ID)',
-      'Address Proof (Utility Bills, Aadhaar)',
-      'Recent Passport-size Photographs',
-      'Bank Statements (Last 6 months)'
-    ],
-    salaried: [
-      'Last 3 Months Salary Slips',
-      'Form 16 / IT Returns (Last 2 Years)',
-      'Employment Letter / Appointment Letter',
-      'Employee ID Card'
-    ],
-    selfEmployed: [
-      'Business Registration Documents',
-      'IT Returns / Audited Financials (Last 2-3 Years)',
-      'GST Returns (if applicable)',
-      'Business Address Proof',
-      'Bank Statements of Business Account',
-       "Business License / Trade License" 
-    ],
-    nri: [
-      'Valid Passport & Visa',
-      'Overseas Address Proof',
-      'NRE/NRO Bank Statements',
-      'Employment Contract / Proof of Income Abroad',
-      'Power of Attorney (if applicable)',
-       "OCI/PIO Card (if applicable)"
-    ],
-    property: [
-      'Land Purchase Agreement / Sale Deed',
-      'Title Deed & Encumbrance Certificate',
-      'Approved Building Plan from Local Authority',
-      'NOC from Society / Local Authority',
-      'Construction Estimate / Cost Sheet',
-      'Property Tax Receipts',
-      'Land Survey Documents',
-      "Soil Test Report (if applicable)" 
-    ]
-  };
+const documents = {
+  common: [
+    "Top-up loan application form with photographs",
+    "Identity Proof – Aadhaar, PAN, Passport, Driving License",
+    "Address Proof – Aadhaar, Passport, Utility Bills, Rent Agreement",
+    "Updated bank statements (Last 6 months)"
+  ],
+
+  salaried: [
+    "Last 3 months salary slips",
+    "Latest Form 16 or ITR",
+    "Salary credit bank statements"
+  ],
+
+  selfEmployed: [
+    "Business registration documents – GST, TIN, Trade License",
+    "Audited financials / ITR for last 2–3 years",
+    "Business account statements (12 months)"
+  ],
+
+  nri: [
+    "Valid passport & visa",
+    "Overseas employment contract and income proof",
+    "NRE/NRO bank statements (last 6 months)",
+    "Power of Attorney if applicable"
+  ],
+
+  property: [
+    "Existing home loan details",
+    "Outstanding loan statement",
+    "Updated property valuation report (if required)",
+    "No objection / declaration forms"
+  ]
+};
+
 
   // FAQs
-  const faqs = [
-    {
-      question: 'What is a Home Construction Loan?',
-      answer: 'A Home Construction Loan helps you build a new house on a plot of land you already own. AHAM Housing Finance provides funds in stages as construction progresses, ensuring financial support throughout your building journey.'
-    },
-    {
-      question: 'Do I need income proof to apply?',
-      answer: 'At AHAM, we understand that not everyone has traditional income documents. While having ITR or salary slips helps expedite approval, we also consider alternative income verification methods to support your loan application.'
-    },
-    {
-      question: 'How is the loan amount disbursed?',
-      answer: 'The loan is disbursed in stages based on construction progress. Typically: 20% on completion of foundation, 35% on completion of lintel level, 25% on completion of roof, and 20% on final completion. Our team conducts site inspections before each disbursement.'
-    },
-    {
-      question: 'What is the maximum loan tenure?',
-      answer: 'AHAM offers flexible repayment tenures of up to 20 years, allowing you to choose a repayment schedule that aligns with your financial capabilities and future plans.'
-    },
-    {
-      question: 'Can I prepay my loan without penalty?',
-      answer: 'Yes! AHAM Housing Finance does not charge any prepayment penalty. You can pay off your loan partially or fully at any time without incurring additional costs, helping you save on interest.'
-    },
-    {
-      question: 'What if I already own land?',
-      answer: 'Perfect! Our Home Construction Loan is designed for individuals who own a plot or land and wish to construct a residential property on it. Just ensure you have clear land title and approved building plans.'
-    },
-    {
-      question: 'Are NRIs eligible for this loan?',
-      answer: 'Yes, NRIs are eligible to apply for Home Construction Loans from AHAM. You will need to provide documents such as passport, visa, overseas address proof, and NRE/NRO bank statements along with standard property documents.'
-    },
-    {
-      question: 'How long does the approval process take?',
-      answer: 'AHAM strives for quick and efficient processing. Once all documents are submitted, loan approval typically takes 7-10 working days. Our dedicated team works to minimize delays and keep you informed throughout the process.'
-    },
-    {
-      question: 'Can I use the loan for renovation or extension?',
-      answer: 'Yes! In addition to new construction, AHAM Home Construction Loans can also be used for significant home renovations, extensions, or repairs to your existing property, giving you flexibility in how you use the funds.'
-    }
-  ];
+const faqs = [
+  {
+    question: "What is a Top-Up Loan?",
+    answer:
+      "A Top-Up Loan allows existing AHAM Housing Finance customers to borrow additional funds over their current home loan without taking a separate loan."
+  },
+  {
+    question: "How much top-up amount can I get?",
+    answer:
+      "You may get between ₹10 lakhs and ₹25 lakhs depending on your eligibility, repayment track, and property valuation."
+  },
+  {
+    question: "What can a top-up loan be used for?",
+    answer:
+      "Top-up loans can be used for home renovation, business needs, medical expenses, education, or any personal financial requirement."
+  },
+  {
+    question: "Is income proof required for a top-up loan?",
+    answer:
+      "Income documents may be needed depending on the requested top-up amount and repayment capacity."
+  },
+  {
+    question: "Does the interest rate differ from home loan rate?",
+    answer:
+      "Top-up loans generally have slightly higher rates than home loans but are much cheaper than personal loans."
+  },
+  {
+    question: "What is the repayment tenure for top-up loans?",
+    answer:
+      "Tenure can go up to 15 years or match your existing home loan tenure, whichever is earlier."
+  },
+  {
+    question: "How quickly can a top-up loan be processed?",
+    answer:
+      "With a good repayment record, AHAM can process top-up loans quickly with minimal documentation."
+  }
+];
+
 
   const toggleFAQ = (index) => {
     setActiveFAQ(activeFAQ === index ? null : index);
@@ -233,10 +228,10 @@ const scrollToSection = (id) => {
             className="max-w-3xl"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Build Your Dream Home with AHAM Home Construction Loan
+              Need Extra Funds? Get an AHAM Top-Up Loan
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              No salary slips or ITR? No problem. AHAM helps you build your home with easy construction financing.
+              Quick approval and minimal paperwork—ideal for renovation, education, business needs, or personal expenses.
             </p>
            <div className="flex flex-col sm:flex-row gap-4">
 

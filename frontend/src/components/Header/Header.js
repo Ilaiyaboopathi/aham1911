@@ -54,13 +54,13 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
       hasDropdown: true,
       submenu: [
         { key: 'construction', label: 'Home Construction Loan', href: '/home-construction-loan', description: 'Get the funds you need to build your dream home, released in easy stages as your construction grows.', image: '/img/megamenu/HomeConstructionLoan.jpg' },
-        { key: 'purchase', label: 'Home Purchase or Resale Loan', href: '/purchase-plot-construction-loan', description: 'Finance to purchase a new or resale home, with flexible repayment options that suit your budget.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
-        { key: 'composite', label: 'Composite Loan ', href: '/nri-home-loan', description: 'Buy your plot and build your home on it with a single, convenient loan structured in two stages.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
+        { key: 'purchase', label: 'Home Purchase or Resale Loan', href: '/home-purchase-loan', description: 'Finance to purchase a new or resale home, with flexible repayment options that suit your budget.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
+        { key: 'composite', label: 'Composite Loan ', href: '/home-composite-loan', description: 'Buy your plot and build your home on it with a single, convenient loan structured in two stages.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
         { key: 'renovation', label: 'Home Renovation Loan', href: '/home-renovation-loan', description: 'Upgrade your existing home with funds for remodeling, interiors, repairs, and modern enhancements.', image: '/img/megamenu/HomeConstructionLoan.jpg' },
         { key: 'extension', label: 'Home Extension Loan', href: '/home-extension-loan', description: 'Add more space to your home to fit your lifestyle, whether it’s a new room, floor, or extended area.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
         { key: 'balance', label: 'Balance Transfer Loan', href: '/balance-transfer-loan', description: 'Move your existing home loan to us and reduce your EMIs with better interest rates and smoother repayment.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
-        { key: 'nri', label: 'NRI Home Loan', href: '/nri-home-loan', description: 'Tailored financing solutions for NRIs to purchase, build, or improve a home in India with simplified documentation.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
-        { key: 'topup', label: 'Top-up Loan', href: '/top-up-loan', description: 'Get additional funds on your existing loan for personal or home needs without extra paperwork.',  image: '/img/megamenu/HomeConstructionLoan.jpg' }
+        { key: 'nri', label: 'NRI Home Loan', href: '/nri-loan', description: 'Tailored financing solutions for NRIs to purchase, build, or improve a home in India with simplified documentation.',  image: '/img/megamenu/HomeConstructionLoan.jpg' },
+        { key: 'topup', label: 'Top-up Loan', href: '/top-up', description: 'Get additional funds on your existing loan for personal or home needs without extra paperwork.',  image: '/img/megamenu/HomeConstructionLoan.jpg' }
       ]
     },
 
@@ -72,7 +72,7 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
       label: 'Partner Us',
       hasDropdown: true,
       submenu: [
-        { label: 'Partner Us', href: '/partner-with-us' },
+        { label: 'Partner Us', href: '/dsa-partner-program' },
         { label: 'DSA Onboarding', href: '/dsa-onboarding' },
       ]
     },
