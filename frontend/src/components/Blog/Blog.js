@@ -15,7 +15,7 @@ const blogPosts = [
     author: 'Rajesh Kumar',
     date: 'Jan 15, 2025',
     readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjE3NDYxMDd8MA&ixlib=rb-4.1.0&q=85',
+    image: 'img/Blogs/Real-Estate.webp',
     featured: true
   },
   {
@@ -26,7 +26,7 @@ const blogPosts = [
     author: 'Priya Sharma',
     date: 'Jan 12, 2025',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjE3NDYxMDd8MA&ixlib=rb-4.1.0&q=85',
+    image: 'img/Blogs/Building-Wealth.webp',
     featured: true
   },
   {
@@ -37,7 +37,7 @@ const blogPosts = [
     author: 'Amit Patel',
     date: 'Jan 10, 2025',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjE3NDYxMDd8MA&ixlib=rb-4.1.0&q=85',
+    image: 'img/Blogs/Leadership.webp',
     featured: true
   },
   {
@@ -48,7 +48,8 @@ const blogPosts = [
     author: 'Sneha Reddy',
     date: 'Jan 8, 2025',
     readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjE3NDYxMDd8MA&ixlib=rb-4.1.0&q=85'
+    image: 'img/Blogs/First-Time.webp',
+     featured: true
   },
   {
     id: 5,
@@ -58,7 +59,8 @@ const blogPosts = [
     author: 'Vikram Singh',
     date: 'Jan 6, 2025',
     readTime: '4 min read',
-    image: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg'
+    image: 'img/Blogs/Tax-Benefits.webp',
+     featured: true
   },
   {
     id: 6,
@@ -68,7 +70,8 @@ const blogPosts = [
     author: 'Meera Nair',
     date: 'Jan 4, 2025',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1755541516517-bb95790dc7ad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MXwxfHNlYXJjaHwxfHxlbnRyZXByZW5ldXJ8ZW58MHx8fHwxNzYxNzQ2MTEyfDA&ixlib=rb-4.1.0&q=85'
+    image: 'img/Blogs/Green-Home.png',
+     featured: true
   },
   {
     id: 7,
@@ -78,7 +81,8 @@ const blogPosts = [
     author: 'Arun Kapoor',
     date: 'Jan 2, 2025',
     readTime: '3 min read',
-    image: 'https://images.unsplash.com/photo-1664575602276-acd073f104c1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxlbnRyZXByZW5ldXJ8ZW58MHx8fHwxNzYxNzQ2MTEyfDA&ixlib=rb-4.1.0&q=85'
+    image: 'img/Blogs/Smart-Planning.webp',
+     featured: true
   },
   {
     id: 8,
@@ -88,7 +92,8 @@ const blogPosts = [
     author: 'Sanjay Mehta',
     date: 'Dec 30, 2024',
     readTime: '6 min read',
-    image: 'https://images.pexels.com/photos/34461740/pexels-photo-34461740.jpeg'
+    image: 'img/Blogs/Complete-Overview.webp',
+     featured: true
   },
   {
     id: 9,
@@ -98,7 +103,8 @@ const blogPosts = [
     author: 'Divya Iyer',
     date: 'Dec 28, 2024',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxlbnRyZXByZW5ldXJ8ZW58MHx8fHwxNzYxNzQ2MTEyfDA&ixlib=rb-4.1.0&q=85'
+    image: 'img/Blogs/Property-Valuation.webp',
+     featured: true
   }
 ];
 
@@ -151,7 +157,7 @@ const Blog = () => {
 
       {/* Hero Featured Article */}
       {featuredPost && (
-        <section className="relative h-[600px] bg-gray-900 overflow-hidden">
+        <section className="relative h-[500px] bg-gray-900 overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${featuredPost.image})` }}

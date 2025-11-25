@@ -219,7 +219,7 @@ const scrollToSection = (id) => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url(img/construction-loan/home-construction-loan.png)',
+            backgroundImage: 'url(img/construction-loan/home-construction-loan.webp)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-800/80 to-transparent"></div>
@@ -241,7 +241,7 @@ const scrollToSection = (id) => {
             </p>
            <div className="flex flex-col sm:flex-row gap-4">
 
-  <a href="https://aham.mbwhost.in/contact">
+    <a href="https://aham.mbwhost.in/contact">
     <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
@@ -355,7 +355,7 @@ const scrollToSection = (id) => {
               className="relative"
             >
               <img
-                src="img/construction-loan/home-construction-overview.png"
+                src="img/construction-loan/home-construction-overview.webp"
                 alt="Home Construction"
                 className="rounded-2xl shadow-large w-full"
               />

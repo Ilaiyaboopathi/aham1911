@@ -71,7 +71,8 @@ const eligibility = [
   "Age between 21 and 60 years (or retirement age, whichever is earlier)",
   "Mandatory Indian resident co-applicant who must be a blood relative",
   "Country of employment must not be in AHAM’s restricted/negative list",
-  "Good credit history and CIBIL compliance required"
+  "Good credit history and CIBIL compliance required",
+  'Stable income source',
 ];
 
 
@@ -100,13 +101,15 @@ const documents = {
   salaried: [
     "Salary slips for the last 3 months",
     "Bank statements showing salary credits for the last 6 months",
-    "Form 16 or Income Tax Return (ITR) copies"
+    "Form 16 or Income Tax Return (ITR) copies",
+     'Employee ID Card'
   ],
 
   selfEmployed: [
     "Audited financial statements / ITRs for the last 3 years",
     "Bank statements (last 12 months)",
-    "Business registration documents – GST, TIN, Trade License, etc."
+    "Business registration documents – GST, TIN, Trade License, etc.",
+     "Business License / Trade License"
   ],
 
   nri: [
@@ -114,7 +117,8 @@ const documents = {
     "Employment contract and working proof",
     "NRE/NRO bank statements for last 6 months",
     "Power of Attorney (if applicable)",
-    "Salary slips / income proof as per country of employment"
+    "Salary slips / income proof as per country of employment",
+     "OCI/PIO Card (if applicable)"
   ],
 
   property: [

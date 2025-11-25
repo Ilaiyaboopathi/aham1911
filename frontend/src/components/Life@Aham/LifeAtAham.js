@@ -360,7 +360,7 @@ const LifeAtAham = () => {
               </div>
                <div className="awards-image-wrapper secondary-award">
                 <img 
-                  src="/img/ahamlife/Team-banner.webp"
+                  src="/img/ahamlife/Training-session.webp"
                   alt="Team excellence"
                   className="awards-img"
                 />

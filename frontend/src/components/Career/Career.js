@@ -183,7 +183,7 @@ const Career = () => {
       <section
         className="relative h-[50vh] flex items-center justify-center text-white bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80')`,
+          backgroundImage: 'url(img/construction-loan/home-construction-loan.webp)',
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#2557a7]/80 to-[#2557a7]/50"></div>
@@ -193,18 +193,40 @@ const Career = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Find Your Dream Job</h1>
+          {/* <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Find Your Dream Job</h1>
           <p className="text-base md:text-lg max-w-md mx-auto leading-relaxed">
             Explore exciting opportunities to grow with our innovative team.
-          </p>
-          <motion.a
+          </p> */}
+           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Find Your Dream Job
+            </h1>
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+              Explore exciting opportunities to grow with our innovative team.
+
+            </p>
+
+                   {/* <div className="flex flex-col sm:flex-row gap-4">
+            
+                <a href="https://aham.mbwhost.in/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-large"
+                >
+                  Apply Now
+                </motion.button>
+              </a>
+              </div> */}
+
+              
+          {/* <motion.a
             href="#openings"
             className="mt-6 inline-block bg-[#2f855a] text-white font-medium py-2.5 px-6 rounded-md hover:bg-[#276749] transition duration-300 shadow-md"
             whileHover={{ scale: 1.05, boxShadow: "0 6px 12px rgba(0,0,0,0.2)" }}
             whileTap={{ scale: 0.95 }}
           >
             Browse Jobs
-          </motion.a>
+          </motion.a> */}
         </motion.div>
       </section>
 

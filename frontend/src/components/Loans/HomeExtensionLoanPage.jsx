@@ -70,7 +70,7 @@ const benefits = [
   "Maximum age at loan maturity: 60 years (salaried) / 65 years (self-employed)",
   "Stable income with repayment capacity as per AHAM policy",
   "Property must have clear title and be structurally suitable for extension",
-  "Extension plan must comply with local authority norms and approvals"
+  // "Extension plan must comply with local authority norms and approvals"
 ];
 
   // Matching icons & colors for each item
@@ -97,13 +97,15 @@ const icons = [
   salaried: [
     "Last 3 months salary slips",
     "6 months bank statement showing salary credits",
-    "Form 16 or IT Returns (last 2 years)"
+    "Form 16 or IT Returns (last 2 years)",
+    'Employee ID Card'
   ],
 
   selfEmployed: [
     "Business registration proof – GST, TIN, Trade License",
     "Audited financial statements / ITR (last 2–3 years)",
-    "Business bank account statements (last 12 months)"
+    "Business bank account statements (last 12 months)",
+     "Business License / Trade License" 
   ],
 
   nri: [
@@ -118,7 +120,8 @@ const icons = [
     "Approved extension plan / building approval",
     "Estimated cost of extension work from contractor/engineer",
     "Latest property tax receipts",
-    "Technical & legal verification reports"
+    "Technical & legal verification reports",
+    "Utility bills for last 6 months"
   ]
 };
 

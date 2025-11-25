@@ -21,11 +21,14 @@ import {
   BriefcaseIcon,
   ShieldCheckIcon,
   DocumentCheckIcon,
-  SparklesIcon
+  SparklesIcon,
+  
 } from '@heroicons/react/24/outline';
+import { useNavigate } from "react-router-dom";
 
 const DSAPartnerProgram = () => {
   const [activeFAQ, setActiveFAQ] = useState(0);
+   const navigate = useNavigate();
 
   // Scroll to section helper
   const scrollToSection = (id) => {
@@ -96,7 +99,8 @@ const DSAPartnerProgram = () => {
     { icon: UserIcon, title: 'Working professionals who want additional income', color: 'text-teal-600' },
     { icon: BuildingOfficeIcon, title: 'Technical vendor', color: 'text-red-600' },
     { icon: DocumentCheckIcon, title: 'Legal vendor', color: 'text-yellow-600' },
-    { icon: ShieldCheckIcon, title: 'RCU Vendor', color: 'text-lime-600' }
+     { icon: ShieldCheckIcon, title: 'RCU Vendor', color: 'text-lime-600' },
+     { icon: UserGroupIcon, title: 'Loan Referral Agents', color: 'text-emerald-600' }
   ];
 
   // Partnership Steps
@@ -268,24 +272,37 @@ const DSAPartnerProgram = () => {
       </div>
 
       {/* Introduction Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Aham Housing Finance invites channel partners or DSAs who can be real-estate agents, community leaders, 
-              and individuals with strong local networks to join our partnership program. Refer customers looking for 
-              <span className="font-semibold text-primary-600"> affordable home loans up to ₹50 lakhs</span>—even without formal income proofs—and 
-              earn attractive incentives on every successful loan disbursement.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+<section className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="max-w-5xl mx-auto"
+    >
+      <div className="relative bg-white shadow-xl rounded-2xl p-10 border-l-8 border-primary-600">
+        
+        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5">
+          Partner With AHAM & Grow Your Income
+        </h3>
+
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Aham Housing Finance welcomes DSAs, real-estate brokers, 
+          and individuals with strong community networks to join our 
+          high-growth channel partner ecosystem. Refer customers seeking 
+          <span className="font-semibold text-primary-600"> affordable home loans up to ₹50 lakhs</span> 
+          and earn rewarding incentives on every successful disbursement.
+        </p>
+
+      </div>
+    </motion.div>
+  </div>
+</section>
+
+
+
+
 
       {/* Sub Menu 1: Why Partner with Us */}
       <section id="why-partner" className="py-20 bg-white">
@@ -828,19 +845,21 @@ const DSAPartnerProgram = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                  onClick={() => navigate("/contact")}  
                 className="bg-white text-primary-600 hover:bg-primary-50 px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 shadow-2xl flex items-center gap-3"
               >
                 <DocumentTextIcon className="h-6 w-6" />
                 Register Now
               </motion.button>
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                 onClick={() => navigate("/contact")}
                 className="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 shadow-2xl flex items-center gap-3"
               >
                 <PhoneIcon className="h-6 w-6" />
                 Talk to Our Partnership Manager
-              </motion.button>
+              </motion.button> */}
             </div>
 
             <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
@@ -851,7 +870,7 @@ const DSAPartnerProgram = () => {
                 <div className="flex flex-col items-center gap-2">
                   <PhoneIcon className="h-8 w-8" />
                   <p className="text-sm opacity-80">Phone</p>
-                  <p className="font-semibold">XXXX XXX XXX</p>
+                  <p className="font-semibold">78239 11555</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <EnvelopeIcon className="h-8 w-8" />

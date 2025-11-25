@@ -15,6 +15,7 @@ import EMICalculatorSection from './components/EMICalculator/EMICalculatorSectio
 import EligibilityScorecardSection from './components/EligibilityScorecard/EligibilityScorecardSection';
 import TestimonialsSection from './components/Testimonials/TestimonialsSection';
 import BlogSection from './components/Blog/BlogSection';
+import ImportantNewsSection from './components/Annonuncement/ImportantNewsSection';  //new scrolling section
 import Footer from './components/Footer/Footer';
 import PMAY2Page from './components/PMAY/PMAY2Page';
 import PartnerWithUs from './components/Partner/PartnerWithUs';
@@ -126,7 +127,9 @@ function App() {
                   onLanguageChange={handleLanguageChange}
                   onCreditScoreClick={() => setShowCreditScoreModal(true)}
                 />
+
                 <main className="overflow-hidden">
+                   
                   <HeroSection onEnquiryClick={() => setShowEnquiryModal(true)} />
                   <WhyChooseSection />
                   <ProductsSection />
@@ -134,6 +137,7 @@ function App() {
                   <EligibilityScorecardSection />
                   <TestimonialsSection />
                   <BlogSection />
+                 <ImportantNewsSection />
                 </main>
                 <Footer />
                 <FloatingActions

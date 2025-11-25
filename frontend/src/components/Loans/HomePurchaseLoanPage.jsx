@@ -72,7 +72,8 @@ const eligibility = [
   "Minimum 2 years continuous employment (salaried) or 3 years business vintage (self-employed)",
   "All property co-owners must be co-applicants; spouse inclusion is mandatory",
   "Minimum CIBIL score of 650; higher scores preferred",
-  "Property must fall within 50 km of an AHAM branch and have clear, marketable title"
+  "Property must fall within 50 km of an AHAM branch and have clear, marketable title",
+   'Good credit history preferred but not mandatory',
 ];
 
 
@@ -93,7 +94,12 @@ const icons = [
   // Documents Required
 const documents = {
 
-     common: [],
+     common: [
+       'Identity Proof (Aadhaar, PAN, Passport, Voter ID)',
+      'Address Proof (Utility Bills, Aadhaar)',
+      'Recent Passport-size Photographs',
+      'Bank Statements (Last 6 months)'
+     ],
   salaried: [
     "Completed loan application form with photographs",
     "Identity Proof – Aadhaar, PAN, Passport, Driving License, etc.",
@@ -108,7 +114,8 @@ const documents = {
     "Audited financial statements & ITR for last 3 years",
     "Cash profit and depreciation schedules",
     "Bank statements for last 12 months",
-    "Property ownership documents and valuation report"
+    "Property ownership documents and valuation report",
+     "Business License / Trade License" 
   ],
   
   nri: [
@@ -116,9 +123,17 @@ const documents = {
     "Overseas employment proof and contract",
     "NRE/NRO bank statements (last 6 months)",
     "Power of Attorney executed in India",
-    "Salary slips and income proof in foreign currency"
+    "Salary slips and income proof in foreign currency",
+      "OCI/PIO Card (if applicable)"
   ],
-   property: []
+   property: [
+     'Land Purchase Agreement / Sale Deed',
+      'Title Deed & Encumbrance Certificate',
+      'Approved Building Plan from Local Authority',
+      'NOC from Society / Local Authority',
+      'Construction Estimate / Cost Sheet',
+      'Property Tax Receipts',
+   ]
 };
 
 

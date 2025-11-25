@@ -46,7 +46,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'Facebook', href: 'https://www.facebook.com/ahamhfc', icon: <FaFacebookF /> },
-    { name: 'Twitter', href: 'https://twitter.com', icon: <FaTwitter /> },
+    // { name: 'Twitter', href: 'https://twitter.com', icon: <FaTwitter /> },
     { name: 'Instagram', href: 'https://www.instagram.com/aham_housingfinance/', icon: <FaInstagram /> },
     { name: 'LinkedIn', href: 'linkedin.com/company/ahamhfc?originalSubdomain=in', icon: <FaLinkedinIn /> },
     { name: 'YouTube', href: 'https://www.youtube.com/@ahamhfc', icon: <FaYoutube /> }
@@ -85,14 +85,14 @@ const Footer = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <PhoneIcon className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                    <a href={getPhoneLink()} className="text-gray-300 hover:text-white transition-colors">
+                    <a href={getPhoneLink()} className="text-gray-300 hover:text-red-600 transition-colors">
                       {t('footer.phone')}
                     </a>
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <EnvelopeIcon className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                    <a href="mailto:info@ahamhfc.com" className="text-gray-300 hover:text-white transition-colors">
+                    <EnvelopeIcon className="h-5 w-5 text-primary-400 flex-shrink-0 " />
+                    <a href="mailto:info@ahamhfc.com" className="text-gray-300 hover:text-red-600 transition-colors">
                       {t('footer.email')}
                     </a>
                   </div>

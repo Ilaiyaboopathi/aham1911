@@ -128,7 +128,8 @@ const icons = [
     'NOC from Local Authority / Society',
     'Latest Property Tax Receipts',
     'Land Survey Document / Layout Plan',
-    'Legal & Technical Assessment Reports'
+    'Legal & Technical Assessment Reports',
+     'Property Tax Receipts',
   ]
 };
 

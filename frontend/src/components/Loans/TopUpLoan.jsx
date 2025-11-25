@@ -96,13 +96,15 @@ const documents = {
   salaried: [
     "Last 3 months salary slips",
     "Latest Form 16 or ITR",
-    "Salary credit bank statements"
+    "Salary credit bank statements",
+     'Employee ID Card'
   ],
 
   selfEmployed: [
     "Business registration documents – GST, TIN, Trade License",
     "Audited financials / ITR for last 2–3 years",
-    "Business account statements (12 months)"
+    "Business account statements (12 months)",
+    "OCI/PIO Card (if applicable)"
   ],
 
   nri: [

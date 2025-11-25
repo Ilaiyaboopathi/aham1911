@@ -155,9 +155,27 @@ const Header = ({ currentLanguage, onLanguageChange, onCreditScoreClick }) => {
     <div className="flex-1 flex justify-center items-center gap-6">
       
 
-      <button onClick={() => navigate('/scorecard')} className="flex items-center gap-2 bg-yellow-500 text-primary-900 px-3 py-1 rounded-full animate-pulse">
+      {/* <button onClick={() => navigate('/scorecard')} className="flex items-center gap-2 bg-yellow-500 text-primary-900 px-3 py-1 rounded-full animate-pulse">
         <StarIcon className="h-4" /> {t('header.annoncement')}
-      </button>
+      </button> */}
+      <button
+          onClick={() => {
+            if (window.location.pathname !== "/") {
+              // Go home first
+              navigate("/");
+              // Wait a moment, then scroll
+              setTimeout(() => {
+                scrollToSection("important-news");
+              }, 400);
+            } else {
+              // Already on home page → just scroll
+              scrollToSection("important-news");
+            }
+          }}
+          className="flex items-center gap-2 bg-yellow-500 text-primary-900 px-3 py-1 rounded-full animate-pulse"
+        >
+          <StarIcon className="h-4" /> {t('header.annoncement')}
+        </button>
 
        <span>|</span>
 

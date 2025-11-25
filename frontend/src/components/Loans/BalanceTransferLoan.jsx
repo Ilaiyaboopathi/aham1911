@@ -70,7 +70,7 @@ const benefits = [
   "FOIR typically capped at 50% depending on income profile",
   "LTV norms to match underlying home loan category",
   "No takeover of pure plot loans unless immediate construction is planned",
-  "Applicant must have clear repayment history with no major delinquencies"
+  //"Applicant must have clear repayment history with no major delinquencies"
 ];
 
   // Matching icons & colors for each item
@@ -97,13 +97,15 @@ const icons = [
   salaried: [
     "Last 3 months salary slips",
     "6 months bank statement showing salary credits",
-    "Form 16 or ITR for last 2 years"
+    "Form 16 or ITR for last 2 years",
+      'Employee ID Card'
   ],
 
   selfEmployed: [
     "Business registration proof – GST, TIN, Trade License",
     "Audited financial statements / ITR (last 2–3 years)",
-    "Business bank account statements (last 12 months)"
+    "Business bank account statements (last 12 months)",
+     "Business License / Trade License" 
   ],
 
   nri: [
@@ -118,7 +120,8 @@ const icons = [
     "Approved building plan and construction status report",
     "Original property documents and no-dues letter from existing lender",
     "Loan account statement from existing lender",
-    "List of original documents held by current lender"
+    "List of original documents held by current lender",
+     'NOC from Society / Local Authority',
   ]
 };
 
